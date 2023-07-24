@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.2",
+    "ts": "^0.0.0",
+    "ts-jest": "^29.1.1"
+  },
+  "name": "hackhaton_2023_07_21",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!variables/.*)"
+    ]
+  }
+}
